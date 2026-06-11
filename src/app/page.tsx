@@ -58,8 +58,6 @@ export default function LandingPage() {
       buttons={[
         {
           text: "Get a Free Quote",          href: "#contact"},
-        {
-          text: "See Our Work",          href: "#services"},
       ]}
       mediaItems={[
         {
@@ -244,7 +242,7 @@ export default function LandingPage() {
             {
               label: "SEO Optimization",              href: "#services"},
             {
-              label: "E-commerce",              href: "#services"},
+            "label": "E-commerce",            "href": "#services"},
             {
               label: "Maintenance",              href: "#services"},
           ],
