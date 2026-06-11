@@ -12,7 +12,6 @@ import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
-import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import { Lightbulb, ShoppingCart, Sparkles, TrendingUp, Users, Zap } from "lucide-react";
 
 export default function LandingPage() {
@@ -39,8 +38,6 @@ export default function LandingPage() {
           name: "Services",          id: "#services"},
         {
           name: "Pricing",          id: "#pricing"},
-        {
-          name: "Testimonials",          id: "#testimonials"},
         {
           name: "FAQ",          id: "#faq"},
       ]}
@@ -186,27 +183,6 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardFive
-      textboxLayout="default"
-      useInvertedBackground={true}
-      testimonials={[
-        {
-          id: "1",          name: "Sarah Johnson",          date: "May 2024",          title: "Boosted Our Online Sales Dramatically!",          quote: "Digital Spark built us an incredible e-commerce site. Our sales have never been better, and the customer support is outstanding. Highly recommend!",          tag: "E-commerce",          avatarSrc: "http://img.b2bpic.net/free-photo/young-person-delivering-parcel-with-van_1048-17815.jpg",          avatarAlt: "Sarah Johnson avatar",          imageSrc: "http://img.b2bpic.net/free-photo/head-shot-happy-beautiful-young-woman-posing-indoors-looking-camera-smiling_74855-10218.jpg",          imageAlt: "Sarah Johnson"},
-        {
-          id: "2",          name: "Michael Chen",          date: "April 2024",          title: "Professional and Easy to Work With",          quote: "Cassius and his team created a beautiful, functional website for my restaurant. The process was smooth, and they truly understood my vision.",          tag: "Restaurant",          avatarSrc: "http://img.b2bpic.net/free-photo/side-view-man-wearing-glasses_23-2149439986.jpg",          avatarAlt: "Michael Chen avatar",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-waitress-standing-with-disposable-coffee-cup_107420-12311.jpg",          imageAlt: "Michael Chen"},
-        {
-          id: "3",          name: "Emily Rodriguez",          date: "March 2024",          title: "Exceptional SEO Results for My Boutique",          quote: "Our boutique now consistently ranks higher on Google, thanks to Digital Spark's SEO expertise. More traffic, more customers!",          tag: "Retail",          avatarSrc: "http://img.b2bpic.net/free-vector/software-company-team_23-2147539419.jpg",          avatarAlt: "Emily Rodriguez avatar",          imageSrc: "http://img.b2bpic.net/free-photo/business-concept-portrait-handsome-business-man-playing-digital-notebook-with-smiling-confident-face-white-backgroundcopy-space_1258-103939.jpg",          imageAlt: "Emily Rodriguez"},
-        {
-          id: "4",          name: "David Kim",          date: "February 2024",          title: "Reliable and Fast Website Development",          quote: "I needed a new website for my plumbing business quickly, and Digital Spark delivered. It looks great and works perfectly on all devices.",          tag: "Local Service",          avatarSrc: "http://img.b2bpic.net/free-vector/family-avatars_23-2147514773.jpg",          avatarAlt: "David Kim avatar",          imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1671.jpg",          imageAlt: "David Kim"},
-        {
-          id: "5",          name: "Jessica Lee",          date: "January 2024",          title: "Transformed My Online Presence!",          quote: "Digital Spark completely revamped my old website. It's now modern, engaging, and truly reflects my brand. Couldn't be happier!",          tag: "Brand Identity",          avatarSrc: "http://img.b2bpic.net/free-photo/horizontal-shot-doubtful-bearded-man-with-ginger-hair-beard-purses-lips-looks-confusingly-hears-puzzled-news-has-specific-appearance-wears-yellow-hoodie-spectacles_273609-42235.jpg",          avatarAlt: "Jessica Lee avatar",          imageSrc: "http://img.b2bpic.net/free-photo/funny-smiling-woman-with-ringlets-wears-glasses-blue-jacket-poses-pink_291650-1102.jpg",          imageAlt: "Jessica Lee"},
-      ]}
-      title="What Our Clients Say About Digital Spark"
-      description="Hear directly from local businesses who have seen their online presence transform."
-    />
-  </div>
-
   <div id="social-proof" data-section="social-proof">
       <SocialProofOne
       textboxLayout="default"
@@ -279,8 +255,6 @@ export default function LandingPage() {
               label: "About Us",              href: "#about"},
             {
               label: "Pricing",              href: "#pricing"},
-            {
-              label: "Testimonials",              href: "#testimonials"},
             {
               label: "FAQ",              href: "#faq"},
           ],
