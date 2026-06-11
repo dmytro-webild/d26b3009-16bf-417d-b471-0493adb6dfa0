@@ -15,6 +15,13 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import { Lightbulb, ShoppingCart, Sparkles, TrendingUp, Users, Zap } from "lucide-react";
 
 export default function LandingPage() {
+  const handleEmailSubmit = (email: string) => {
+    console.log(`Sending email from ${email} to casreid15@gmail.com`);
+    alert(`Thank you for your submission! We'll reach out to you at ${email}.`);
+    // In a real application, you would send this email to a backend API
+    // or use a third-party service like Formspree, EmailJS, etc.
+  };
+
   return (
     <ThemeProvider
         defaultButtonVariant="shift-hover"
@@ -226,6 +233,7 @@ export default function LandingPage() {
       inputPlaceholder="Enter your email"
       buttonText="Send Message"
       termsText="Owner: Cassius Reid | Email: casreid15@gmail.com | Phone: 301-404-2665"
+      onSubmit={handleEmailSubmit}
     />
   </div>
 
